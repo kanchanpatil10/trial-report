@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="next.html" class="form">
+
+        <label for="name">Name:</label>
+        <input type="text" pattern="^[a-zA-Z ]{4,25}$" id="name" required>
+
+        <label for="roll">Roll No:</label>
+        <input type="text" pattern="^[A-Z]{4}[0-9]{3,6}$" id="rollNo" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" pattern="^[a-zA-Z ]{4,25}$" id="subject" required>
+
+        <label for="marks">Marks:</label>
+        <input  id="marks" pattern="^[1-9]$|^[1-9][0-9]$|^(100)$" required>
+
+        <label for="outOf" class="label">Out of:</label>
+        <select id="outOf" class="input">
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+
+        <table id="myTable">
+            <tr>
+              <th>Row1 cell1</th>
+              <th>Row1 cell2</th>
+              <th>out of</th>
+            </tr>
+          </table>
+          <br>
+          
+          <button type="button" onclick="myFunction()">add</button>
+          
+          <button type="button" onclick="de()">delete</button>
+
+        <input type="submit" id="submit" value="submit">
+    </form>
+
+    <script src="js/vali.js"></script>
+</body>
+</html>
